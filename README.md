@@ -36,4 +36,4 @@ await speakAndWait('Great Work! we have completed today\'s exercise', 0);
     }
     
     startExercise();
-" style="height:100px;width:200px">EyeExercise</button></center>
+" style="height:100px;width:200px">EyeExercise</button><br>
