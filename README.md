@@ -1,39 +1,46 @@
-<center><button onclick="
-    function speakAndWait(text, waitSeconds) {
-        speechSynthesis.speak(new SpeechSynthesisUtterance(text));
-        return new Promise(resolve => 
-            setTimeout(resolve, waitSeconds * 1000)
-        );
-    }
+<center>
+    <button onclick="startEyeExercise()" style="height:100px;width:200px">
+        EyeExercise
+    </button>
+    <br>
+</center>
 
-async function startExercise() {
-await speakAndWait('Welcome Back! Great that you came up with this idea. We will start eyes exercise now. This will last just 10 minutes', 1);
-await speakAndWait('Start with rolling your eyes gently for 2 minute. Starting now!', 60);
-await speakAndWait('another 1 minute', 60);
-await speakAndWait('Great! Relax now', 5);
+<script>
+function speakAndWait(text, waitSeconds) {
+    speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    return new Promise(resolve => 
+        setTimeout(resolve, waitSeconds * 1000)
+    );
+}
 
-await speakAndWait('Now, Gently massage your eyes sockets for 2 minute', 60);
-await speakAndWait('Great! Relax now', 5);
-await speakAndWait('Another 1 minute', 60);
-await speakAndWait('Great! Relax now', 5);
+async function startEyeExercise() {
+    await speakAndWait('Welcome back dear! Great that you came up with this idea. We will start eyes exercise now. This will last just 11 minutes', 1);
+    await speakAndWait('Start with rolling your eyes gently for 2 minute. Starting now!', 60);
+    await speakAndWait('Great! Relax now', 5);
+    await speakAndWait('Roll for another 1 minute', 60);
+    await speakAndWait('Great! Relax now', 5);
 
-await speakAndWait('Now pin your acupressure points for 3 minutes', 60);
-await speakAndWait('Another 2 minute', 60);
-await speakAndWait('Great! Relax now', 5);
-await speakAndWait('Another 1 minute', 60);
-await speakAndWait('Great! Relax now', 5);
+    await speakAndWait('Now, Gently massage your eyes sockets for 2 minute. Starting now!', 60);
+    await speakAndWait('Great! Relax now', 5);
+    await speakAndWait('Massage for another 1 minute', 60);
+    await speakAndWait('Great! Relax now', 5);
 
-await speakAndWait('Great So far! Now focus adjustment for near and far for 4 minutes', 60);
-await speakAndWait('Great! Relax now', 5);
-await speakAndWait('Another 3 minutes', 60);
-await speakAndWait('Great! Relax now', 5);
-await speakAndWait('Another 2 minutes', 60);
-await speakAndWait('Great! Relax now', 5);
-await speakAndWait('Last 1 minute', 60);
-await speakAndWait('Great! Relax now', 5);
+    await speakAndWait('Now, pin your acupressure points for 3 minutes. Starting now!', 60);
+    await speakAndWait('Great! Relax now', 5);
+    await speakAndWait('pin for 2 minutes', 60);
+    await speakAndWait('Great! Relax now', 5);
+    await speakAndWait('pin for another 1 minute', 60);
+    await speakAndWait('Great! Relax now', 5);
 
-await speakAndWait('Great Work! we have completed today\'s exercise', 0);
-    }
-    
-    startExercise();
-" style="height:100px;width:200px">EyeExercise</button><br>
+    await speakAndWait('Awesome So far! Now focus adjustment for near and far points for 4 minutes', 60);
+    await speakAndWait('Great! Relax now', 5);
+    await speakAndWait('focus for another 3 minutes', 60);
+    await speakAndWait('Great! Relax now', 5);
+    await speakAndWait('focus for another 2 minutes', 60);
+    await speakAndWait('Great! Relax now', 5);
+    await speakAndWait('focus for last 1 minute', 60);
+    await speakAndWait('Great! Relax now', 5);
+
+    await speakAndWait('Terrific Work! we have completed today\'s exercise', 0);
+}
+</script>
