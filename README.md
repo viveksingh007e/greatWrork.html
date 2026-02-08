@@ -1,4 +1,4 @@
-<Center><button onclick="
+<center><button onclick="
     function speakAndWait(text, waitSeconds) {
         speechSynthesis.speak(new SpeechSynthesisUtterance(text));
         return new Promise(resolve => 
