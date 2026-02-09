@@ -1,8 +1,8 @@
 <html>
-<body style="background: black; color: white; text-align: center; padding: 50px 20px; font-family: Arial;">
+<body style="background:DarkGreen; color: white; text-align: center; padding: 50px 20px; font-family: Arial;">
 <center>
-    <button onclick="startEyeExercise()" style="height:100px;width:200px">
-        Eye Exercise 👁️‍🗨️
+    <button onclick="startEyeExercise()" style="height:100px;width:200px;background:BurlyWood;border-radius:30px">
+        <b style="font-size:60px;">🧐</b>
     </button>
     <br>
 </center>
@@ -50,9 +50,8 @@ async function startEyeExercise() {
         await speakAndWait('focus for another 2 minutes', 60);
         await speakAndWait('Great! Relax now', 5);
         await speakAndWait('focus for last 1 minute', 60);
-        await speakAndWait('Great! Relax now', 5);
 
-        await speakAndWait('Terrific Work! we have completed today\'s exercise', 0);
+        await speakAndWait('Terrific Work! we have completed today\'s exercise. See you !', 0);
         
     } catch (error) {
         console.error('Error:', error);
