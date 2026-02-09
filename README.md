@@ -1,3 +1,5 @@
+<html>
+<body style="background: black; color: white; text-align: center; padding: 50px 20px; font-family: Arial;">
 <center>
     <button onclick="startEyeExercise()" style="height:100px;width:200px">
         Eye Exercise 👁️‍🗨️
@@ -62,3 +64,6 @@ async function startEyeExercise() {
     }
 }
 </script>
+
+</body>
+</html>
