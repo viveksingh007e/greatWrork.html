@@ -1,8 +1,12 @@
 <html>
 <body style="background:DarkSlateGray; color: white; text-align: center; padding: 50px 20px; font-family: Arial;">
 <center>
-    <button onclick="startEyeExercise()" style="height:100px;width:200px;background:BurlyWood;border-radius:30px">
+    <button onclick="startEyeExercise()" style="height:90px;width:120px;background:MistyRose;border-radius:30px">
         <b style="font-size:60px;">🧐</b>
+    </button>
+    <br><br><br>
+	 <button onclick="startBellyExercise()" style="height:90px;width:120px;background:MistyRose;border-radius:30px">
+        <b style="font-size:60px;">🦘</b>
     </button>
     <br>
 </center>
@@ -51,6 +55,39 @@ async function startEyeExercise() {
         await speakAndWait('Great! Relax now', 5);
         await speakAndWait('focus for last 1 minute', 60);
 
+        await speakAndWait('Terrific Work! we have completed today\'s exercise. See you !', 0);
+        
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Error starting exercise: ' + error.message);
+    } finally {
+        // Always disable no sleep when done
+        noSleep.disable();
+        console.log('NoSleep disabled');
+    }
+}
+
+async function startBellyExercise() {
+    try {
+        // Enable no sleep - requires user gesture
+        await noSleep.enable();
+        console.log('NoSleep enabled');
+        
+        await speakAndWait('Welcome dear! We will start belly exercise now. This will last just 8 minutes. Take your time to get in position. We will start in 10 seconds', 15);
+        
+		await speakAndWait('Are you ready now!', 4);
+		await speakAndWait('Lets start jumping for 2 minutes straight. Starting now!', 122);
+        await speakAndWait('Great! Relax now for 20 seconds', 22);
+      
+        await speakAndWait('Lets start jumping for another 2 minutes. This is second set. Starting now!', 122);
+		await speakAndWait('Great! Relax now for 20 seconds', 22);
+		
+		await speakAndWait('Lets start jumping for another 2 minutes. This is third set. Starting now!', 122);
+		await speakAndWait('Great! Relax now for 20 seconds', 22);
+		
+		await speakAndWait('Lets start jumping for another 2 minutes. This is last set. Starting now!', 122);
+		await speakAndWait('Great! Relax now for 20 seconds', 22);
+		
         await speakAndWait('Terrific Work! we have completed today\'s exercise. See you !', 0);
         
     } catch (error) {
