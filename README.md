@@ -55,7 +55,7 @@ async function startEyeExercise() {
         await speakAndWait('Great! Relax now', 5);
         await speakAndWait('focus for last 1 minute', 60);
 
-        await speakAndWait('Terrific Work! we have completed today\'s exercise. See you !', 0);
+        await speakAndWait('Terrific Work! we have completed eye exercise. See you again!', 0);
         
     } catch (error) {
         console.error('Error:', error);
@@ -86,9 +86,8 @@ async function startBellyExercise() {
 		await speakAndWait('Great! Relax now for 20 seconds', 22);
 		
 		await speakAndWait('Lets start jumping for another 2 minutes. This is last set. Starting now!', 122);
-		await speakAndWait('Great! Relax now for 20 seconds', 22);
 		
-        await speakAndWait('Terrific Work! we have completed today\'s exercise. See you !', 0);
+        await speakAndWait('Terrific Work! we have completed jumping exercise. See you again!', 0);
         
     } catch (error) {
         console.error('Error:', error);
