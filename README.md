@@ -5,7 +5,7 @@
     <br>
 </center>
 
-<script>
+<script src="https://unpkg.com/nosleep.js@0.12.0/dist/NoSleep.min.js"> 
 function speakAndWait(text, waitSeconds) {
     speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     return new Promise(resolve => 
@@ -14,6 +14,7 @@ function speakAndWait(text, waitSeconds) {
 }
 
 async function startEyeExercise() {
+    await noSleep.enable();
     await speakAndWait('Welcome back dear! Great that you came up with this idea. We will start eyes exercise now. This will last just 11 minutes', 1);
     await speakAndWait('Start with rolling your eyes gently for 2 minute. Starting now!', 60);
     await speakAndWait('Great! Relax now', 5);
@@ -41,5 +42,6 @@ async function startEyeExercise() {
     await speakAndWait('focus for last 1 minute', 60);
 
     await speakAndWait('Terrific Work! we have completed today\'s exercise', 0);
+    noSleep.disable();
 }
 </script>
