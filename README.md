@@ -51,7 +51,7 @@ async function startEyeExercise() {
         await speakAndWait('Great! Relax now', 10);
         await speakAndWait('focus for another 3 minutes', 70);
         await speakAndWait('Great! Relax now', 10);
-        await speakAndWait('focus for another 2 minutes', 70;
+        await speakAndWait('focus for another 2 minutes', 70);
         await speakAndWait('Great! Relax now', 10);
         await speakAndWait('focus for last 1 minute', 70);
 
