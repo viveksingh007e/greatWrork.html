@@ -1,5 +1,5 @@
 <html>
-<body style="background:DarkGreen; color: white; text-align: center; padding: 50px 20px; font-family: Arial;">
+<body style="background:DarkSlateGray; color: white; text-align: center; padding: 50px 20px; font-family: Arial;">
 <center>
     <button onclick="startEyeExercise()" style="height:100px;width:200px;background:BurlyWood;border-radius:30px">
         <b style="font-size:60px;">🧐</b>
