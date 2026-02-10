@@ -8,6 +8,10 @@
 	 <button onclick="startBellyExercise()" style="height:90px;width:120px;background:MistyRose;border-radius:30px">
         <b style="font-size:60px;">🦘</b>
     </button>
+    <br><br><br>
+	<button onclick="startYog()" style="height:90px;width:120px;background:MistyRose;border-radius:30px">
+        <b style="font-size:60px;">🧘</b>
+    </button>
     <br>
 </center>
 
@@ -89,6 +93,44 @@ async function startBellyExercise() {
 		await speakAndWait('Lets start jumping for another 2 minutes. This is last set. Starting now!', 130);
 		
         await speakAndWait('Terrific Work! we have completed jumping exercise. See you again!', 0);
+        
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Error starting exercise: ' + error.message);
+    } finally {
+        // Always disable no sleep when done
+        noSleep.disable();
+        console.log('NoSleep disabled');
+    }
+}
+
+async function startYog() {
+    try {
+        // Enable no sleep - requires user gesture
+        await noSleep.enable();
+        console.log('NoSleep enabled');
+        
+        await speakAndWait('Welcome dear! We will start Yoga now. This will last just 8 minutes. Take your time to get in position. We will start in 10 seconds', 20);
+        
+		await speakAndWait('Are you ready now!', 5);
+		
+		await speakAndWait('Lets start HeadShine for 5 minutes. Starting now!', 70);
+        await speakAndWait('Another 4 minutes remaining', 70);
+		await speakAndWait('Great! Relax now for 10 seconds', 12);
+		await speakAndWait('Continue for another 3 minutes', 70);
+		await speakAndWait('Just 2 minute remaining now!', 70);
+		await speakAndWait('Great! Relax now for 10 seconds', 12);
+		await speakAndWait('Last 1 minute remaining now!', 70);
+		await speakAndWait('Perfect! HeadShine is complete now. Relax!', 20);
+		
+		await speakAndWait('Lets start Nose Breathing for 2 minutes. Starting now!', 70);
+		await speakAndWait('just 1 minute remaining now', 70);
+		await speakAndWait('Perfect! Nose Breathing is complete now. Relax!', 20);
+		
+        await speakAndWait('Lets rub nails for 2 minutes. Starting now!', 70);
+		await speakAndWait('just 1 minute remaining now', 70);		
+		
+		await speakAndWait('Terrific Work! we have completed Yoga. See you again!', 0);
         
     } catch (error) {
         console.error('Error:', error);
