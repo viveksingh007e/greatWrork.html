@@ -29,8 +29,8 @@ async function startEyeExercise() {
         await noSleep.enable();
         console.log('NoSleep enabled');
         
-        await speakAndWait('Welcome back dear! Great that you came up with this idea. We will start eyes exercise now. This will last just 11 minutes. Sit comfortably and get in position', 25);
-        await speakAndWait('We will start with rolling the eyes gently for 2 minute. Start by rolling side ways for 1 minute', 70);
+        await speakAndWait('Welcome back dear! Great that you came up with this idea. We will start eyes exercise now. This will last just 13 minutes. Sit comfortably and get in position', 25);
+        await speakAndWait('We will start with rolling the eyes gently for 4 minutes. Start by rolling side ways for 1 minute', 70);
         await speakAndWait('Great! Relax now', 10);
         await speakAndWait('Now, Roll eyes up and down for a minute', 70);
         await speakAndWait('Great! Relax now', 10);
