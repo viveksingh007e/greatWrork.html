@@ -111,21 +111,19 @@ async function startYog() {
         console.log('NoSleep enabled');
         
         await speakAndWait('Welcome dear! We will start Yoga now. This will last just 8 minutes. Take your time to get in position. We will start in 10 seconds', 20);
-        
-		await speakAndWait('Are you ready now!', 5);
 		
-		await speakAndWait('Lets start HeadShine for 5 minutes. Starting now!', 70);
+		await speakAndWait('Lets start head shine for 5 minutes. Starting now!', 70);
         await speakAndWait('Another 4 minutes remaining', 70);
 		await speakAndWait('Great! Relax now for 10 seconds', 12);
 		await speakAndWait('Continue for another 3 minutes', 70);
 		await speakAndWait('Just 2 minute remaining now!', 70);
 		await speakAndWait('Great! Relax now for 10 seconds', 12);
 		await speakAndWait('Last 1 minute remaining now!', 70);
-		await speakAndWait('Perfect! HeadShine is complete now. Relax!', 20);
+		await speakAndWait('Perfect! head shine is complete now. Relax!', 20);
 		
-		await speakAndWait('Lets start Nose Breathing for 2 minutes. Starting now!', 70);
+		await speakAndWait('Lets start Nose breathing for 2 minutes. Starting now!', 70);
 		await speakAndWait('just 1 minute remaining now', 70);
-		await speakAndWait('Perfect! Nose Breathing is complete now. Relax!', 20);
+		await speakAndWait('Perfect! Nose breathing is complete now. Relax!', 20);
 		
         await speakAndWait('Lets rub nails for 2 minutes. Starting now!', 70);
 		await speakAndWait('just 1 minute remaining now', 70);		
