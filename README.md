@@ -29,33 +29,34 @@ async function startEyeExercise() {
         await noSleep.enable();
         console.log('NoSleep enabled');
         
-        await speakAndWait('Welcome back dear! Great that you came up with this idea. We will start eyes exercise now. This will last just 11 minutes. Sit comfortably and get in position', 30);
-        await speakAndWait('We will start with rolling the eyes gently for 2 minute. Starting now!', 70);
+        await speakAndWait('Welcome back dear! Great that you came up with this idea. We will start eyes exercise now. This will last just 11 minutes. Sit comfortably and get in position', 25);
+        await speakAndWait('We will start with rolling the eyes gently for 2 minute. Start by rolling side ways for 1 minute', 70);
         await speakAndWait('Great! Relax now', 10);
-        await speakAndWait('Roll for last 1 minute', 70);
+        await speakAndWait('Now, Roll eyes up and down for a minute', 70);
         await speakAndWait('Great! Relax now', 10);
+		await speakAndWait('Now, Roll eyes clockwise for a minute', 70);
+        await speakAndWait('Great! Relax now', 10);
+		await speakAndWait('Now, Roll eyes anti-clockwise for a minute', 70);
+        await speakAndWait('Perfect! The rolling is complete now. Relax!', 15);
 
-        await speakAndWait('Now, Gently massage your eyes sockets for 2 minute. Starting now!', 70);
-        await speakAndWait('Great! Relax now', 10);
-        await speakAndWait('Massage for last 1 minute', 70);
-        await speakAndWait('Great! Relax now', 10);
+        await speakAndWait('Now, Gently massage your eyes sockets for 2 minute.', 70);
+        await speakAndWait('Continue for last 1 minute', 70);
+        await speakAndWait('Perfect! The massage is complete now. Relax!', 15);
 
-        await speakAndWait('Now, pin your acupressure points for 3 minutes. Starting now!', 70);
-        await speakAndWait('Great! Relax now', 10);
-        await speakAndWait('pin for another 2 minutes', 70);
-        await speakAndWait('Great! Relax now', 10);
-        await speakAndWait('pin for last 1 minute', 70);
-        await speakAndWait('Great! Relax now', 10);
+        await speakAndWait('Now, pin your acupressure points for 3 minutes', 70);
+        await speakAndWait('Continue for another 2 minutes', 70);
+        await speakAndWait('Just 1 minute remaining now', 70);
+        await speakAndWait('Perfect! The acupressure is complete now. Relax!', 15);
 
         await speakAndWait('Awesome So far! Now focus adjustment for near and far points for 4 minutes. Starting now!', 70);
         await speakAndWait('Great! Relax now', 10);
-        await speakAndWait('focus for another 3 minutes', 70);
+        await speakAndWait('continue for another 3 minutes', 70);
         await speakAndWait('Great! Relax now', 10);
-        await speakAndWait('focus for another 2 minutes', 70);
+        await speakAndWait('continue for another 2 minutes', 70);
         await speakAndWait('Great! Relax now', 10);
-        await speakAndWait('focus for last 1 minute', 70);
+        await speakAndWait('just 1 minute remaining now', 70);
 
-        await speakAndWait('Terrific Work! we have completed eye exercise. See you again!', 0);
+        await speakAndWait('Terrific Work! we have completed all eye exercises. See you again!', 0);
         
     } catch (error) {
         console.error('Error:', error);
