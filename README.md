@@ -4,19 +4,19 @@
     <button onclick="startEyeExercise()" style="height:90px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🧐</b>
     </button>
-    <br><font color=gold><b>13 min<b></font><br><br>
+    <br><font color=gold><b>13 min</b></font><br><br>
 	 <button onclick="startBellyExercise()" style="height:90px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🦘</b>
     </button>
-    <br><font color=gold><b>8 min<b></font><br><br>
+    <br><font color=gold><b>8 min</b></font><br><br>
 	<button onclick="startYog()" style="height:90px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🧘</b>
     </button>
-    <br><font color=gold><b>9 min<b></font><br><br>
+    <br><font color=gold><b>9 min</b></font><br><br>
 	<button onclick="startRun()" style="height:90px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🏃</b>
     </button>
-    <br><font color=gold><b>5 min<b></font><br><br>
+    <br><font color=gold><b>5 min</b></font><br><br>
 </center>
 
 <script src="https://unpkg.com/nosleep.js@0.12.0/dist/NoSleep.min.js"></script>
