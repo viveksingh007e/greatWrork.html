@@ -4,7 +4,7 @@
     <button onclick="startEyeExercise()" style="height:90px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🧐</b>
     </button>
-    <br><font color=gold><b>13 min</b></font><br><br>
+    <br><font color=gold><b>11 min</b></font><br><br>
 	 <button onclick="startBellyExercise()" style="height:90px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🦘</b>
     </button>
@@ -37,7 +37,7 @@ async function startEyeExercise() {
         await noSleep.enable();
         console.log('NoSleep enabled');
         
-        await speakAndWait('Welcome back dear! Great that you came up with this idea. We will start eyes exercise now. This will last just 13 minutes. Sit comfortably and get in position', 25);
+        await speakAndWait('Welcome back dear! Great that you came up with this idea. We will start eyes exercise now. This will last just 11 minutes. Sit comfortably and get in position', 25);
         await speakAndWait('We will start with rolling the eyes gently for 2 minutes', 65);
 		await speakAndWait('1 minute remaining ', 62);
         await speakAndWait('Perfect! The rolling is complete now. Relax!', 15);
@@ -144,15 +144,16 @@ async function startRun() {
         await noSleep.enable();
         console.log('NoSleep enabled');
         
-        await speakAndWait('Welcome dear! We will start Running now. This will last just 5 minutes. Take your time to get in position. We will start in 15 seconds', 25);
+        await speakAndWait('Welcome dear! We will start Running now. Today we will run for just 6 minutes. Take your time to get in position. We will start in 30 seconds', 40);
 		
 		await speakAndWait('Lets hit the road now! Run!', 65);
-        await speakAndWait('Another 4 minutes remaining', 65);
-		await speakAndWait('Continue for another 3 minutes', 65);
-		await speakAndWait('Just 2 minute remaining now!', 65);
-		await speakAndWait('Great running! Last 1 minute remaining now!', 65);
+        await speakAndWait('5 minutes remaining now', 65);
+		await speakAndWait('Continue for another 4 minutes', 65);
+		await speakAndWait('Just 3 minutes remaining now!', 65);
+		await speakAndWait('Just 2 minutes remaining now!', 65);
+		await speakAndWait('Last 1 minute to run. Come on!', 65);
 		
-		await speakAndWait('Terrific! Perfect! Run is complete now. Relax! See you again!', 0);
+		await speakAndWait('Wow Terrific! Perfect! Run is complete now. Relax! See you tommorow same time!', 0);
         
     } catch (error) {
         console.error('Error:', error);
