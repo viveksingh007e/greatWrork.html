@@ -17,7 +17,7 @@
         <b style="font-size:60px;">🏃</b>
     </button>
     <br><font color=gold><b>5 min</b></font><br><br>
-<button onclick="startHang()" style="height:90px;width:120px;background:OliveDrab;border-radius:30px">
+	<button onclick="startHang()" style="height:90px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🏋️‍♂️</b>
     </button>
     <br><font color=gold><b>4 min</b></font><br><br>
@@ -142,6 +142,7 @@ async function startYog() {
         console.log('NoSleep disabled');
     }
 }
+
 async function startRun() {
     try {
         // Enable no sleep - requires user gesture
@@ -169,7 +170,7 @@ async function startRun() {
     }
 }
 
-	async function startHang() {
+async function startHang() {
     try {
         // Enable no sleep - requires user gesture
         await noSleep.enable();
@@ -178,13 +179,13 @@ async function startRun() {
         await speakAndWait('Cool! Lets do some hanging. Get in position', 20);
 		
 		await speakAndWait('Lets hang for 10 seconds', 12);
-        await speakAndWait('Relax, 10);
+        await speakAndWait('Relax', 10);
 		await speakAndWait('Lets hang for 10 seconds', 12);
-        await speakAndWait('Relax, 10);
+        await speakAndWait('Relax', 10);
 		await speakAndWait('Lets hang for 10 seconds', 12);
-        await speakAndWait('Relax, 10);
+        await speakAndWait('Relax', 10);
 		await speakAndWait('Lets hang for 10 seconds', 12);
-        await speakAndWait('Relax, 10);
+        await speakAndWait('Relax', 10);
 		
 		await speakAndWait('Kudos to the Effort! See you again!', 0);
         
