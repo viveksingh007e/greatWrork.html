@@ -2,28 +2,28 @@
 <body style="background:DarkOliveGreen; color: white; text-align: center; padding: 50px 20px; font-family: Arial;">
 <center>
 	<br>
-    <button onclick="startEyeExercise()" style="height:110px;width:120px;background:OliveDrab;border-radius:30px">
+    <button onclick="startEyeExercise()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🧐</b><br><font color=gold><b>8 min</b></font>
     </button>
 	&nbsp;&nbsp;
 	
-	<button onclick="startYog()" style="height:110px;width:120px;background:OliveDrab;border-radius:30px">
+	<button onclick="startYog()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🧘</b><br><font color=gold><b>11 min</b></font>
     </button>
 	
 	<br><br>
-	 <button onclick="startBellyExercise()" style="height:110px;width:120px;background:OliveDrab;border-radius:30px">
+	 <button onclick="startBellyExercise()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🦘</b><br><font color=gold><b>8 min</b></font>
     </button>
     &nbsp;&nbsp;
     
 	
-	<button onclick="startHang()" style="height:110px;width:120px;background:OliveDrab;border-radius:30px">
+	<button onclick="startHang()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🏋️</b><br><font color=gold><b>4 min</b></font>
     </button>
     
 	<br><br>
-	<button onclick="startRun()" style="height:110px;width:120px;background:OliveDrab;border-radius:30px">
+	<button onclick="startRun()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🏃</b><br><font color=gold><b>6 min</b></font>
     </button>
     
