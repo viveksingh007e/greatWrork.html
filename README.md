@@ -165,7 +165,7 @@ async function startRun() {
 		await speakAndWait('Just 2 minutes remaining now!', 65);
 		await speakAndWait('Last 1 minute to run. Come on!', 65);
 		
-		await speakAndWait('Wow Terrific! Perfect! Run is complete now. Relax! See you tommorow same time!', 0);
+		await speakAndWait('Terrific! Perfect! Run is complete now. Relax! See you tommorow same time!', 0);
         
     } catch (error) {
         console.error('Error:', error);
@@ -192,8 +192,7 @@ async function startHang() {
 		await speakAndWait('Lets hang for 10 seconds', 12);
         await speakAndWait('Relax', 10);
 		await speakAndWait('Lets hang for 10 seconds', 12);
-        await speakAndWait('Relax', 10);
-		
+        		
 		await speakAndWait('Kudos to the Effort! See you again!', 0);
         
     } catch (error) {
