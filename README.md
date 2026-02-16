@@ -17,6 +17,10 @@
         <b style="font-size:60px;">🏃</b>
     </button>
     <br><font color=gold><b>5 min</b></font><br><br>
+<button onclick="startHang()" style="height:90px;width:120px;background:OliveDrab;border-radius:30px">
+        <b style="font-size:60px;">🏋️‍♂️</b>
+    </button>
+    <br><font color=gold><b>4 min</b></font><br><br>
 </center>
 
 <script src="https://unpkg.com/nosleep.js@0.12.0/dist/NoSleep.min.js"></script>
@@ -154,6 +158,35 @@ async function startRun() {
 		await speakAndWait('Last 1 minute to run. Come on!', 65);
 		
 		await speakAndWait('Wow Terrific! Perfect! Run is complete now. Relax! See you tommorow same time!', 0);
+        
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Error starting exercise: ' + error.message);
+    } finally {
+        // Always disable no sleep when done
+        noSleep.disable();
+        console.log('NoSleep disabled');
+    }
+}
+
+	async function startHang() {
+    try {
+        // Enable no sleep - requires user gesture
+        await noSleep.enable();
+        console.log('NoSleep enabled');
+        
+        await speakAndWait('Cool! Lets do some hanging. Get in position', 20);
+		
+		await speakAndWait('Lets hang for 10 seconds', 12);
+        await speakAndWait('Relax, 10);
+		await speakAndWait('Lets hang for 10 seconds', 12);
+        await speakAndWait('Relax, 10);
+		await speakAndWait('Lets hang for 10 seconds', 12);
+        await speakAndWait('Relax, 10);
+		await speakAndWait('Lets hang for 10 seconds', 12);
+        await speakAndWait('Relax, 10);
+		
+		await speakAndWait('Kudos to the Effort! See you again!', 0);
         
     } catch (error) {
         console.error('Error:', error);
