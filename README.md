@@ -3,12 +3,12 @@
 <center>
 	<br>
     <button onclick="startEyeExercise()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
-        <b style="font-size:60px;">🧐</b><br><font color=gold><b>8 min</b></font>
+        <b style="font-size:60px;">🧐</b><br><font color=gold><b>11 min</b></font>
     </button>
 	&nbsp;&nbsp;
 	
 	<button onclick="startYog()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
-        <b style="font-size:60px;">🧘</b><br><font color=gold><b>11 min</b></font>
+        <b style="font-size:60px;">🧘</b><br><font color=gold><b>12 min</b></font>
     </button>
 	
 	<br><br>
@@ -19,7 +19,7 @@
     
 	
 	<button onclick="startHang()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
-        <b style="font-size:60px;">🏋️</b><br><font color=gold><b>4 min</b></font>
+        <b style="font-size:60px;">🏋️</b><br><font color=gold><b>50 sec</b></font>
     </button>
     
 	<br><br>
@@ -112,7 +112,7 @@ async function startYog() {
         await noSleep.enable();
         console.log('NoSleep enabled');
         
-        await speakAndWait('Welcome dear! We will start Yoga now. This will last just 8 minutes. Take your time to get in position. We will start in 10 seconds', 20);
+        await speakAndWait('Welcome dear! We will start Yoga now. This will last just 12 minutes. Take your time to get in position. We will start in 10 seconds', 20);
 		
 		await speakAndWait('Lets start head shine for 5 minutes. Starting now!', 125);
 		await speakAndWait('Great! Relax now for 10 seconds', 12);
