@@ -173,11 +173,11 @@ async function startHang() {
         await speakAndWait('Cool! Lets do some hanging. Get in position', 20);
 		
 		await speakAndWait('Lets hang for 15 seconds first', 18);
-        await speakAndWait('Relax', 15);
+        await speakAndWait('Relax', 18);
 		await speakAndWait('another set for 15 seconds again', 18);
-        await speakAndWait('Relax', 15);
+        await speakAndWait('Relax', 18);
 		await speakAndWait('This time for 10 seconds', 12);
-        await speakAndWait('Relax', 15);
+        await speakAndWait('Relax', 18);
 		await speakAndWait('Last for 10 seconds', 12);
         		
 		await speakAndWait('Great Dear! You nailed it! See you again!', 0);
