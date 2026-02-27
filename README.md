@@ -24,7 +24,7 @@
     
 	<br><br>
 	<button onclick="startRun()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
-        <b style="font-size:60px;">🏃</b><br><font color=gold><b>7 min</b></font>
+        <b style="font-size:60px;">🏃</b><br><font color=gold><b>9 min</b></font>
     </button>
     
 	
@@ -143,14 +143,14 @@ async function startRun() {
         await noSleep.enable();
         console.log('NoSleep enabled');
         
-        await speakAndWait('Welcome dear! We will start Running now. Great that you have raised the bar for today. We will run for 8 minutes. Take your time to get in position. We will start in 30 seconds. All the best!', 40);
+        await speakAndWait('Welcome dear! We will start Running now. Great that you have raised the bar for today. We will run for 9 minutes. Take your time to get in position. We will start in 30 seconds. All the best!', 40);
 		
-		await speakAndWait('Lets hit the road now! Run!', 185);
-        await speakAndWait('5 minutes remaining now', 65);
-		await speakAndWait('Continue for another 4 minutes', 65);
-		await speakAndWait('Just 3 minutes remaining now!', 65);
-		await speakAndWait('Just 2 minutes remaining now!', 65);
-		await speakAndWait('Last 1 minute to run. Come on!', 65);
+		await speakAndWait('Lets hit the road now! Run!', 180);
+        await speakAndWait('6 minutes remaining now', 120);
+		await speakAndWait('Continue for another 4 minutes', 60);
+		await speakAndWait('Just 3 minutes remaining now!', 60);
+		await speakAndWait('Just 2 minutes remaining now!', 60);
+		await speakAndWait('Last 1 minute to run. Come on!', 60);
 		
 		await speakAndWait('Terrific! Perfect! Run is complete now. Relax! See you tommorow same time!', 0);
         
