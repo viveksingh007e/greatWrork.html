@@ -19,7 +19,7 @@
     
 	
 	<button onclick="startHang()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
-        <b style="font-size:60px;">🏋️</b><br><font color=gold><b>50 sec</b></font>
+        <b style="font-size:60px;">🏋️</b><br><font color=gold><b>55 sec</b></font>
     </button>
     
 	<br><br>
@@ -172,13 +172,11 @@ async function startHang() {
         
         await speakAndWait('Cool! Lets do some hanging. Get in position', 20);
 		
-		await speakAndWait('Lets hang for 15 seconds first', 18);
-        await speakAndWait('Relax', 18);
-		await speakAndWait('another set for 15 seconds again', 18);
-        await speakAndWait('Relax', 18);
-		await speakAndWait('This time for 10 seconds', 12);
-        await speakAndWait('Relax', 18);
-		await speakAndWait('Last for 10 seconds', 12);
+		await speakAndWait('Lets hang for 20 seconds first', 23);
+        await speakAndWait('Relax for 40 seconds', 40);
+		await speakAndWait('Lets do one more set for 20 seconds again', 23);
+        await speakAndWait('Relax for 40 seconds', 40);
+		await speakAndWait('Last one for 15 seconds', 12);
         		
 		await speakAndWait('Great Dear! You nailed it! See you again!', 0);
         
