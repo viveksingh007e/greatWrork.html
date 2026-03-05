@@ -18,14 +18,12 @@
     &nbsp;&nbsp;
     
 	
-	<button onclick="startHang()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
-        <b style="font-size:60px;">🏋️</b><br><font color=gold><b>55 sec</b></font>
-    </button>
-    
-	<br><br>
 	<button onclick="startRun()" style="height:120px;width:120px;background:OliveDrab;border-radius:30px">
         <b style="font-size:60px;">🏃</b><br><font color=gold><b>9 min</b></font>
     </button>
+    
+	
+	
     
 	
 </center>
@@ -164,31 +162,6 @@ async function startRun() {
     }
 }
 
-async function startHang() {
-    try {
-        // Enable no sleep - requires user gesture
-        await noSleep.enable();
-        console.log('NoSleep enabled');
-        
-        await speakAndWait('Cool! Lets do some hanging. Get in position', 20);
-		
-		await speakAndWait('Lets hang for 20 seconds first', 24);
-        await speakAndWait('Relax for 40 seconds', 40);
-		await speakAndWait('Lets do one more set for 20 seconds again', 24);
-        await speakAndWait('Relax for 40 seconds', 40);
-		await speakAndWait('Last one for 15 seconds', 19);
-        		
-		await speakAndWait('Great Dear! You nailed it! See you again!', 0);
-        
-    } catch (error) {
-        console.error('Error:', error);
-        alert('Error starting exercise: ' + error.message);
-    } finally {
-        // Always disable no sleep when done
-        noSleep.disable();
-        console.log('NoSleep disabled');
-    }
-}
 </script>
 
 </body>
